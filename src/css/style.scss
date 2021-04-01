@@ -1,0 +1,13 @@
+$body-color: red;
+
+@import "_partials/reset";
+@import "_partials/variables";
+@import "_partials/mixins";
+@import "_partials/typography";
+
+
+// Components scss
+@import "_components/form";
+
+// page scss
+@import "_pages/login";

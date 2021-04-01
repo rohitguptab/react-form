@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+
+/*_typography.scss*/
+body {
+  color: $base-color;
+  font-size: $base-font-size;
+  font-family: $base-font;
+  font-weight: $base-font-weight;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: $base-font;
+}
+
+h2 {
+  font-size: 28px;
+  font-family: $base-font;
+  line-height: 36px;
+  font-weight: 700;
+  color: $base-color;
+  padding: 0 0 34px;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: $base-font;
+  line-height: 23px;
+  font-weight: 700;
+  color: $base-color;
+}
+
+a {
+  color: $blue;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+
+.white {
+  color: #fff;
+} 
+.center {
+  text-align: center;
+}

@@ -1,0 +1,87 @@
+.react-form{
+  .react-form_inner {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    @include align-items(stretch);
+    .react-form-section--left {
+      width: 70%;
+      display: flex;
+      @include align-items(center);
+      @include justify-content(center);
+      padding: 20px;
+      box-sizing: border-box;
+      position: relative;
+      .react-form-indicator {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 20px 20px;
+        font-size: 12px;
+        color: $base-color;
+        font-weight: 600;
+        .react-form-indicator_dots {
+          margin-left: 10px;
+          .react-form-indicator_dot {
+            width: 5px;
+            height: 5px;
+            display: inline-block;
+            background: $base-color;
+            margin: 0 6px;
+            border-radius: 50%;
+            vertical-align: middle;
+          }
+        }
+      }
+      .react-form-section-inner {
+        width: 480px;
+      }
+    }
+    .react-form-section--right {
+      width: 33%;
+      background: $blue;
+      display: flex;
+      @include align-items(center);
+      @include justify-content(center);
+      padding: 20px;
+      box-sizing: border-box;
+      .react-form-section-inner {
+        max-width: 100%;
+        width: 300px;
+        color: $white;
+      }
+    }
+  }
+  
+}
+
+
+@include lg {
+  .react-form{
+    .react-form_inner {
+      flex-wrap: wrap;
+      height: auto;
+      .react-form-section--left {
+        width: 100%;
+        order: 2;
+        .react-form-section-inner {
+          width: 500px;
+          .react-form-indicator {
+            position: relative;
+            padding: 10px 0 20px 0;
+            text-align: right;
+          }
+        }
+      }
+      .react-form-section--right {
+        width: 100%;
+        order: 1;
+        .react-form-section-inner {
+          width: 500px;
+          padding: 40px 0;
+        }
+      }
+    }
+  }
+  
+}
